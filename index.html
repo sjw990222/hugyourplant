@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Hug your Plant!
+	</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+    	html{font-family:'Noto Serif KR', serif;
+    		scroll-behavior: smooth;
+    		background: #fff6e9;}
+    	body,h5,h4,h3,h2,h1,ul,li{margin:0; padding:0;}
+		nav{width: 1200px;
+			height: 30px;
+			margin:auto;}
+		nav ul{width:100%;
+			height: 50px;}
+		nav ul li{list-style-type: none;
+			width:25%;
+			float:left;
+			text-align: center;
+			line-height: 50px;
+			font-size: 1.7em;
+			font-weight: 700;}
+		nav ul li a{display: block;
+			color: #7ccaf1;
+			text-decoration: none;}
+    	header{margin: auto;
+    		width: 100%;
+    		background-image: url("headbackground.png");
+    		background-size: 100%}
+    	header img {width: 100%;}
+
+    	section{width: 1200px;
+    		margin:auto;
+    		margin-bottom: 30px;}
+
+    	h1 {font-size: 2em;
+    		color: white;
+    		word-break: keep-all;
+    		letter-spacing: 1px;}
+    	h2 {font-size: 6em;
+    		font-weight: 900;
+    		letter-spacing: 10px;
+    		color: white;
+    		word-break: keep-all;}
+    	h3 {font-size: 1em;
+    		font-weight: 700;
+    		letter-spacing: 0.3px;
+    		word-break: keep-all;
+    		line-height: 1.65;
+    		margin-bottom: 20px;}
+    	h4 {font-size: 6em;
+    		font-weight: 900;
+    		letter-spacing: 10px;
+    		word-break: keep-all;}
+    	h5 {font-size: 1.7em;
+    		letter-spacing: 0.3px;
+    		word-break: keep-all;
+    		line-height: 1.7;
+    		font-weight: 900;
+    		color:#008432;}
+
+    	a:link{color: #008432;
+			text-decoration: none;}
+		a:visited{color: #008432;
+			text-decoration: none;}
+		a:hover{color: #f15e29;
+			text-decoration: none;}
+    	footer{background:#008432;
+    		height: 300px;
+    		width: 100%;}
+    	footer p{font-weight: 500;
+    		font-size: 0.8em;
+    		letter-spacing: 0.3px;
+    		line-height: 1.7;
+    		text-align: center;
+    		padding: 50px;
+    		color:white;}
+    	img{width: 100%;}
+    	.flex{display: flex;}
+		.col1{margin:2%;}
+		.col2{width: 46%;
+			margin:2%;}
+		.col3{width: 29%;
+			margin: 2%;}
+		.col4{width: 62%;margin:2%;}
+		.col5{width: 14%;margin:2%;}
+		.top {font-size: 1.5em;
+			text-align: center;
+			margin:auto;
+			letter-spacing: 10px;
+			font-weight: 700;}
+		.title {background-color:#008432;
+			width: 100%;
+			height: 150px;
+			text-align: center;
+			word-spacing: 4px;
+			color:white;
+			margin:auto;}
+		.refer {width: 500px;
+			margin-top:150px;
+			margin-left:150px;
+			margin-right:150px;}
+		.right {text-align: right;
+			margin-right:150px;}
+		.desc{font-size: 1em;
+			width: 500px;
+			font-weight: 400;
+			letter-spacing: -0.4px;
+			text-align: center;
+			margin: auto;
+			word-break: keep-all;
+			margin-top:70px;
+			margin-bottom: 70px;}
+		.why{font-size: 3em;
+    	 letter-spacing: -0.3px;
+    	 font-weight: 700;
+    	 text-align: center;
+    	 margin-bottom: 20px;}
+    	.ask{background-color:#fe5c1f;
+			width: 40%;
+			height: 50px;
+			text-align: center;
+			border-radius: 30px 30px 30px 30px;
+			margin:auto;
+		    margin-bottom: 100px;
+		    margin-top: 50px;}
+		.but{width: 100%;
+			height: 800px;
+			background:#008432;
+			text-align: center;
+			background-image: url("how.png");
+			background-size: 100%;}
+		.reason {text-align: center;
+			height: 390px;
+			background-image: url("why.png");
+			background-size: 100%;}
+		.diary {background-image: url("diary.png");
+				background-size: 100%;
+				height: 750px;
+				padding-left: 50px;
+				padding-top: 50px;
+				margin-bottom: 100px;}
+		.happy {background-image: url("happy.png");
+				background-size: 100%;
+				height: 800px;
+				padding-top: 50px;
+				padding-left: 50px;}
+		.ex {width: 1200px;
+			margin:auto;
+			text-align: center;}
+		.ex img {width: 300px;}
+		.on {color:white;
+			font-size: 1.2em;
+			font-weight: 700;
+			letter-spacing: 0.3px;
+			line-height: 1.65;}
+		.step {text-align: center;
+			background-color:#fe5c1f;
+			width: 200px;
+			height: 50px;
+			border-radius: 30px 30px 30px 30px;}
+		.review{text-align: center;}
+		.eachreview {background:#008432;
+		border-radius: 30px 30px 30px 30px;
+		padding-bottom: 10px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 30px;
+		color:white;}
+		.wyn{width: 60%;
+			margin:auto;}
+		.start{font-size: 4em;
+    	 letter-spacing: 0.3px;
+    	 font-weight: 600;
+    	 text-align: center;
+    	 margin-bottom: 20px;}
+    	.memory{text-align: right;}
+    	.empha{font-size: 1.2em;
+    		font-weight: 900;
+    		letter-spacing: 0.3px;}
+    	.gotop{background:white;
+    		width: 400px;
+    		height: 60px;
+    		border-radius: 30px 30px 30px 30px;
+    		font-weight: 900;
+    		font-size: 1.2em;
+    		text-align: center;
+    		margin:auto;}
+    </style>
+
+</head>
+<body>
+	
+
+	
+	<header>
+		<div class="top">		
+				전국민 반려식물 키우기 프로젝트
+		</div>
+		<br>
+		<br>
+		<div>
+			<img src="gif.gif">
+		</div>
+		<br>
+		<div class="title">
+			<h2>
+				안녕 식물아
+			</h2>
+		</div>
+	</header>
+
+	<br>
+	<br>
+
+	<nav id="navigation">
+		<ul>
+			<li>
+				<a href="#a">소개</a>
+			</li>
+			<li>
+				<a href="#b">구성품</a>
+			</li>
+			<li>
+				<a href="#c">활용 방법</a>
+			</li>
+			<li>
+				<a href="#d">후기</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<section class="flex" id="a">
+		<h3 class="col4 refer">
+			식물은 생명이다.
+ 			<br>
+ 			<br>
+			이 말은 우리가 식물의 필요에 귀를 기울이면 식물이 우리 영혼의 빈자리를 채워줄 수 있다는 뜻이다.
+ 			<br>
+ 			<br>
+			내 말이 이상하게 들리거나 가식적으로 느껴질 수도 있지만, 나는 서로를 돌보고 위로함으로써 활력소가 되는 것이 식물과 인간의 가장 자연스러운 역할이라고 믿는다.
+		</h3>
+		<div class="col3">
+		</div>
+	</section>
+
+	<section class="flex">
+		<div class="col3">	
+		</div>
+		<h3 class="col4">
+			<도시 속의 월든, 서머 레인 오크스>
+		</h3>
+	</section>
+
+
+
+	<section class="flex">
+		<div class="col3">
+		</div>
+		<h3 class="col4 refer">
+			식물은 보고 듣지도, 말하지도, 움직이지도 못하는 것처럼 보이지만 분명 나름대로 정신세계가 있다.
+ 			<br>
+ 			<br>
+			존재 자체로 충분히 어떤 교감을 주고받을 수 있는 대상이다.
+		</h3>
+	</section>
+
+
+	<section class="flex">
+		<div class="col4">
+		</div>
+		<h3 class="col3 right">
+			<식물의 위로, 박원순>
+		</h3>
+	</section>
+
+	<div>
+		<img src="main.png">
+	</div>
+
+			<br>
+			<br>
+			<br>
+
+	<section>
+		<h1 class="ask">
+			반려식물이 무엇인가요?
+		</h1>
+
+		<div class="why">
+			식물도 친구가 될 수 있어요.		
+		</div>
+
+		<h3 class="desc">
+			반려식물이란, 반려동물을 뜻하는 펫(pet)과 식물을 뜻하는 플랜트(plant)가 합쳐져 만들어진 말로, 반려동물처럼 곁에 두고 키우는 반려식물을 뜻하는 신조어에요.
+		</h3>
+		
+
+		<div class="img">
+			<img src="defofpetplant.png">
+		</div>
+		<h3 class="desc">
+			최근 식물에게 반려동물 못지 않은 정서적 애착을 느낀다는 사람들이 점점 많아지고 있어요! 더 이상 식물은 그저 공기 정화와 인테리어의 역할만 하는 것이 아닌거죠.
+		</h3>
+	</section>
+
+	<section>
+		<h1 class="ask">
+			왜 반려식물인가요?
+		</h1>
+		<div class="why">
+			식물은 날 기쁘게 해요!
+		</div>
+	</section>
+
+	<section class="flex reason">
+		<h3 class="col3">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			집안 분위기가 밝아졌어요!
+		</h3>
+		<h3 class="col3">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			일상 속에서 소소한 기쁨을 줘요!
+		</h3>
+		<h3 class="col3">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			힐링이 돼요!
+		</h3>
+	</section>
+
+	<h3 class="desc">
+			특히, 최근 길어지는 코로나 사태로 인해 생기는 우울함과 무기력을 없애고, 심리적 안정을 찾기 위해 반려 식물을 찾는 사람이 증가하고 있어요.
+	</h3>
+
+	<section class="but">
+		<div class="why">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			그런데... 
+			<br>
+			어떻게 키울까요?
+		</div>
+	</section>
+
+	<section id="b">
+		<h1 class="ask">
+			당신을 위해 준비했어요!
+		</h1>
+	</section>
+
+	<section class="flex">
+		<div class="col4">
+			<img src="starterpack.png">
+		</div>
+		<div class="col3">
+			<h4 class="col3">
+				원예 스타터팩
+			</h4>
+			<br>
+			<br>
+			<br>
+			<h3>
+			 원예가 처음인 당신을 위해 준비했어요. 겁먹지 말고 시작해보세요. 더 중요한 건 당신의 사랑과 관심이니까요!
+			</h3>			
+		</div>
+	</section>
+
+		<br>
+		<br>
+
+	<section class="flex">
+		<div class="col2">
+			<h4 class="col2">
+				기록팩
+			</h4>
+			<br>
+			<br>
+			<br>
+			<h3>
+			 	반려식물과 함께하는 매일매일이 소중했으면 좋겠어요! 언어로 표현하지 못하는 반려식물을 위해 매일 관찰해주세요. 그러다보면 언젠가 마음만으로 모든 게 통하는 사이가 되어있을 거에요.
+			</h3>
+		</div>
+
+		<div class="col2">
+			<img src="write.png">
+		</div>
+	</section>
+
+	<br>
+	<br>
+
+	<section class="flex">
+		<div class="col2">
+			<img src="clothespack.png">
+		</div>
+
+		<div class="col2">
+			<h4 class="col2">
+				산책팩
+			</h4>
+			<br>
+			<br>
+			<br>
+			<h3>
+				가끔은 같이 놀러가요. 아니면 집에서 햇살을 받으며 놀아도 좋아요! 뭐든 반려식물과 함께라면 행복할 거에요. 아무튼 함께하자구요!
+			</h3>
+		</div>
+	</section>
+
+		<br>
+		<br>
+
+	<section>
+		<h1 class="ask">
+			당신이 준비할 것은...
+		</h1>
+	</section>
+
+	<section>
+		<h5 class="ex">
+				이 네가지 밖에 없어요!
+		</h5>
+		<br>
+		<br>
+		<br>
+		<div class="wyn">
+			<img src="whatyouneed.png">
+		</div>
+		<br>
+		<br>
+		<br>
+		<h5 class="ex">
+				그대신 없으면 안돼요!
+		</h5>
+	</section>
+
+	<section id="c">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h3 class="start">
+			그럼 시작해볼까요?
+		</h3>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</section>
+
+	<section>
+		<h1 class="step">
+			STEP 1
+		</h1>
+		<br>
+		<br>
+		<h4>
+			만나기
+		</h4>
+	</section>
+
+	<section class="flex">
+		<div class="col2">
+			<h3>
+				친구와 첫 인사는 하셨겠죠?
+				<br>
+				이름을 지어주고 화분을 예쁘게 꾸며보세요.
+				<br>
+				친구가 된 날을 적어두고 매년 기념해보는 건 어떨까요?
+			</h3>
+		</div>
+		<div class="col2">
+			<img src="naming.png">
+		</div>
+	</section>
+
+	<section>
+		<h1 class="diary on">
+			당신의 반려식물은 소리 대신 모양으로 얘기해요.
+			<br>
+			매일 흙의 상태와 잎의 상태를 관찰해주세요.
+			<br>
+			당신의 반려식물이 무슨 애기를 하는지 단번에 알 수 있을 거에요!
+		</h1>
+
+	</section>
+
+	<section>
+		<h1 class="step">
+			STEP 2
+		</h1>
+		<br>
+		<br>
+		<h4>
+			친해지기
+		</h4>
+		<br>
+		<br>
+		<h3>
+			이제 그럼 우리 추억을 쌓아볼까요?
+			<br>
+			산책도 가고 영화도 보고!
+			<br>
+			오늘은 뭘 할까요?
+		</h3>
+	</section>
+
+	<section class="flex">
+		<div class="col3 memory">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h3 class="empha">
+				2020.10.01
+			</h3>
+			<h3>
+				<br>
+				[오랜만에 피아노 연습]
+				<br>
+				다음엔 젓가락 행진곡 같이 치자
+			</h3>
+		</div>
+		<div class="col4">
+			<img src="piano.png">
+		</div>
+	</section>
+
+	<section class="flex">
+		
+		<div class="col4">
+			<img src="picnic.png">
+		</div>
+		<div class="col3">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h3 class="empha">
+				2020.10.09
+			</h3>
+			<h3>
+				<br>
+				[가을 소풍]
+				<br>
+				첫 피크닉!
+			</h3>
+		</div>
+	</section>
+
+	<section class="flex">
+		<div class="col3 memory">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h3 class="empha">
+				2020.10.30
+			</h3>
+			<h3>
+
+				<br>
+				[할로윈 홈 파티]
+				<br>
+				너 정말 용감하구나?
+			</h3>
+		</div>
+		<div class="col4">
+			<img src="halloween.png">
+		</div>
+	</section>
+
+	<section class="flex">
+		
+		<div class="col4">
+			<img src="netflix.png">
+		</div>
+		<div class="col3">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h3 class="empha">
+				2020.11.02
+			</h3>
+			<h3>
+				<br>
+				[영화 <마담 프루스트의 정원> 시청]
+				<br>
+				너 중간에 졸았지?
+			</h3>
+		</div>
+	</section>
+
+		<br>
+		<br>
+
+	<section>
+		<h5 class="ex">
+			그렇게 함께 하루하루를 보내다보면
+			어느새 세상에 둘도 없는 단짝이 되어 있을 거에요!
+		<h5>
+	</section>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+	<section>
+		<h1 class="step">
+			STEP 3
+		</h1>
+		<br>
+		<br>
+		<h4>
+			보살피기
+		</h4>
+		<br>
+		<br>
+		<h3>
+			당신의 식물이 항상 건강할 수는 없어요.
+			<br>
+			그래도 걱정마세요!
+			<br>
+			저희가 오래오래 도와드릴게요!
+		</h3>
+	</section>
+
+	<section>
+		<br>
+		<br>
+		<h5 class="ex">
+			원예가 처음이더라도 겁먹지마세요!
+			<br>
+			원예 스타터팩과 함께 차근차근 시작해봐요.
+		</h5>
+	</section>
+
+		<br>
+		<br>
+
+	<section class="flex ex">
+		<div class="col3">
+			<img src="sp1.png">
+		</div>
+		<div class="col3">
+			<img src="sp2.png">
+		</div>
+		<div class="col3">
+			<img src="sp3.png">
+		</div>
+	</section>
+
+	<section class="flex ex">
+		<div class="col3">
+			<h3>
+				휴대용 물뿌리개
+			</h3>
+		</div>
+		<div class="col3">
+			<h3>
+				미니 원예삽 3종 세트
+			</h3>
+		</div>
+		<div class="col3">
+			<h3>
+				온·습도계
+			</h3>
+		</div>
+	</section>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+
+	<div class="happy">
+		<h1 class="step">
+			STEP 4
+		</h1>
+		<h2 class="ontitle">
+			행복하기
+		</h2>
+		<h3 class="on">
+			당신과 당신의 친구가 꼭 오래오래 행복하길 빌게요.
+			<br>
+			가끔 소식도 꼭 들려주세요!
+			<br>
+			기쁜 소식만 잔뜩 있길 바래요!
+		</h3>
+	</div>
+
+	</section>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+	<section id="d">
+		<h1 class="ask">
+			Review
+		</h1>
+	</section>
+
+	<section>
+		<h5 class="review">
+			안녕 식물아 키트를 구매하신 많은 분들이, 반려식물과 함께하는 모습을 보내주셨어요!
+		</h5>
+	</section>
+
+	<section class="flex">
+		<div class="col3">
+			<img src="re1.png">
+		</div>
+		<div class="col3">
+			<img src="re2.png">
+		</div>
+		<div class="col3">
+			<img src="re3.png">
+		</div>
+	</section>
+
+	<section class="flex">
+		<div class="col3 review eachreview">
+			<h3>
+				< 경기 이OO님 >
+				<br>
+				<br>
+				제 식물 크기가 꽤 큰 편인데도 가방에 아주 잘 들어가네요.
+				다른 상품들도 내구성이 좋아서 마음에 들어요.
+			</h3>
+		</div>
+		<div class="col3 review eachreview">
+			<h3>
+				< 충남 강OO님 >
+				<br>
+				<br>
+				원예할 때 온도계랑 습도계 둘 다 필요하다고 해서 찾아보다가 구매하게 됐어요! 혹시나 해서 집 온도계랑 비교해봤는데 꽤 정확하네요! 
+			</h3>
+		</div>
+		<div class="col3 review eachreview">
+			<h3>
+				< 제주 고OO님 >
+				<br>
+				<br>
+				코로나 때문에 야외 피크닉 대신 집에서 피크닉해요.. 코로나 없어지면 같이 산책가려구요 ㅠㅠ
+			</h3>
+		</div>
+	</section>
+
+		<br>
+		<br>
+		<br>
+		<br>
+
+
+</body>
+<footer>
+	 <p>
+	 	<a href="#navigation" class="gotop">맨 위로</a>
+	 	<br>
+	 	<br>
+	 	대표 신지원
+	 	<br>
+	 	<br>
+	 	고객문의
+	 	<br>
+	 	sinj3181@gmail.com
+	 	<br>
+	 	<br>
+	 	&copy;2020 all rights reserved.
+	 	</p>
+</footer>
+</html>
